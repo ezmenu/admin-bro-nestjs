@@ -10,7 +10,7 @@ type ParamsType = Record<string, any>;
 export class Resource extends BaseResource {
   public static validate: any;
 
-  private model: typeof BaseEntity;
+  protected model: typeof BaseEntity;
 
   private propsObject: Record<string, Property> = {};
 
